@@ -1,18 +1,24 @@
-PS C:\Users\child\OneDrive\Desktop\test git> git branch
-PS C:\Users\child\OneDrive\Desktop\test git> git add .
-PS C:\Users\child\OneDrive\Desktop\test git> git commit -m "test3"
- 1 file changed, 1 insertion(+), 1 deletion(-)
-PS C:\Users\child\OneDrive\Desktop\test git> git push -u origin main
+# 1. ตั้งค่า Git (ทำครั้งเดียวในเครื่อง)
+git config --global user.name "ชื่อของคุณ"
+git config --global user.email "อีเมลของคุณ@example.com"
 
+# 2. คัดลอกโปรเจกต์จาก GitHub (ทำครั้งเดียวต่อโปรเจกต์)
+git clone https://github.com/username/repository.git
+cd repository
+
+# 3-6. ทำงานกับโปรเจกต์ (ทำซ้ำทุกครั้งที่มีการแก้ไข)
+
+# ดึงการเปลี่ยนแปลงล่าสุดจาก GitHub
 git pull origin main
-ดึงค่าล่าสุดลงมา หลังจากตั้งค่า git แล้ว 
 
-clone คำสั่งลงมา
-git clone https://github.com/childxor/test1.git
+# แก้ไขไฟล์ตามต้องการ
+# ...
 
-ตั้งค่า Git (ถ้ายังไม่ได้ตั้งค่า):
-git config --global user.name "Your Name"
-git config --global user.email "youremail@example.com"
+# เพิ่มไฟล์ที่แก้ไขเข้าสู่ staging area
+git add .
 
+# สร้าง commit
+git commit -m "อธิบายสิ่งที่คุณเปลี่ยนแปลง"
 
-
+# อัพโหลดการเปลี่ยนแปลงขึ้น GitHub
+git push origin main
