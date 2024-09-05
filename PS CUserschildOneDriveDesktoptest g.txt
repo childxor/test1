@@ -1,0 +1,18 @@
+PS C:\Users\child\OneDrive\Desktop\test git> git branch
+PS C:\Users\child\OneDrive\Desktop\test git> git add .
+PS C:\Users\child\OneDrive\Desktop\test git> git commit -m "test3"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\child\OneDrive\Desktop\test git> git push -u origin main
+
+git pull origin main
+ดึงค่าล่าสุดลงมา หลังจากตั้งค่า git แล้ว 
+
+clone คำสั่งลงมา
+git clone https://github.com/childxor/test1.git
+
+ตั้งค่า Git (ถ้ายังไม่ได้ตั้งค่า):
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+
+
+
